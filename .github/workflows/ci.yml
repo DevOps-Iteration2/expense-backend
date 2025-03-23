@@ -1,0 +1,5 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  call-continuous-integration-reusable:
+    uses: devops-iteration2/github-reusable-workflows/.github/workflows/ci.yml@main
