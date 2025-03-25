@@ -1,0 +1,13 @@
+name:
+on:
+  push:
+    branches:
+      - main
+      - "EXP-**"
+jobs:
+  call-continuous-integration-reusable:
+    uses: DevOps-iteration1/github-reusable-workflows/.github/workflows/release.yml@main
+    with:
+      project_name: expense-backend
+      npm_install: true
+    secrets: inherit
