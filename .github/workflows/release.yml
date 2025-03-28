@@ -5,7 +5,7 @@ on:
       - "*"
 jobs:
   call-continuous-integration-reusable:
-    uses: DevOps-iteration2/github-reusable-workflows/.github/workflows/release.yml@main
+    uses: DevOps-Iteration2/github-reusable-workflows/.github/workflows/release.yml@main
     with:
       project_name: expense-backend
       release_archive_file: "*.js package.json schema VERSION node_modules"
