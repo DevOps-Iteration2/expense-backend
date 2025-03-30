@@ -6,7 +6,7 @@ on:
       - "EXP-**"
 jobs:
   call-continuous-integration-reusable:
-    uses: devops-iteration2/github-reusable-workflows/.github/workflows/ci.yml@main
+    uses: DevOps-Iteration2/github-reusable-workflows/.github/workflows/ci.yml@main
     with:
       project_name: expense-backend
     secrets: inherit
