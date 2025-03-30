@@ -6,8 +6,9 @@ on:
 jobs:
   call-release-reusable:
     uses: devops-iteration2/github-reusable-workflows/.github/workflows/release.yml@main
+    secrets: inherit
     with:
       project_name: expense-backend
       release_archive_file: "*.js package.json schema VERSION node_modules"
       npm_install: true
-    secrets: inherit #Any changes in backend we need to add a new tag and update it in the backend
+     #Any changes in backend we need to add a new tag and update it in the backend
